@@ -31,11 +31,11 @@
 							<a href="ingreso.html"><span></span> TU CUENTA</a>
 						</div-->
 						<ul class="login">
-							<li><a href="ingreso.php"><span></span> INGRESAR</a></li>
+							<li><a href="index.php?p=ingreso"><span></span> INGRESAR</a></li>
 							&nbsp;|&nbsp;
-							<li><a href="registro.php">REGISTRARME</a></li>
+							<li><a href="index.php?p=registro">REGISTRARME</a></li>
 							&nbsp;|&nbsp;
-							<li><a href="contacto.php">CONTACTO</a></li>
+							<li><a href="index.php?p=contacto">CONTACTO</a></li>
 						</ul>
 						<!--div class="cart"><a href="#"><span></span>CART</a></div-->
 						<div class="clearfix"></div>

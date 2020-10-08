@@ -1,6 +1,7 @@
 
 		<div class="container">
 			<section id="page">
+				<?php echo sumar(1, 2) ?>
 				<!-- PRODUCTOS DESTACADOS -->
 <div class="shoes-grid">
 	<div class="products">

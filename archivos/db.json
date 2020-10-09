@@ -1,0 +1,23 @@
+[
+    {
+        "nombre": "Carla",
+        "apellido": "Lorenzo",
+        "edad": 40,
+        "email": "clorenzo@gmail.com",
+        "clave": "1234"
+    },
+    {
+        "nombre": "Santiago",
+        "apellido": "Lorenzo",
+        "edad": 40,
+        "email": "slorenzo@gmail.com",
+        "clave": "1234"
+    },
+    {
+        "nombre": "Jorge",
+        "apellido": "Lorenzo",
+        "edad": 40,
+        "email": "jlorenzo@gmail.com",
+        "clave": "1234"
+    }
+]

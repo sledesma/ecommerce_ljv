@@ -6,6 +6,7 @@ require 'db/tablas/productos.php';
 require_once 'functions/utils.php';
 
 require_once 'template/cabecera.php';
+
 if(isset($_GET['p']))
     require_once 'pages/'.$_GET['p'].'.php';
 else

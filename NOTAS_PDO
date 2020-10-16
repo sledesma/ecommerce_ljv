@@ -1,0 +1,25 @@
+                CONSULTAS A LA BASE DE DATOS
+
+Dos tipos:
+LECTURA
+ESCRITURA
+
+... Pero TRES métodos:
+
+query() => LECTURA
+prepare() => LECTURA Y ESCRITURA
+exec() => ESCRITURA
+
+
+Los dos primeros métodos (o funciones) devuelven un PDOStatement. Ésta es la clase que me permite gestionar la consulta SQL (ya sea para agregar parámetros, o para hacer un fetch de los datos, por ejemplo).
+
+Entonces, los dos primeros métodos RETORNAN LO MISMO.
+
+¿En qué se diferencian?
+
+Se diferencian en CUANDO lo retornan.
+
+query() EJECUTA LA CONSULTA SQL Y LUEGO RETORNA EL PDOStatement
+prepare() RETORNA PRIMERO UN PDOStatement Y TE DA LA POSIBILIDAD DE EJECUTAR LUEGO LA CONSULTA
+
+La funcion exec() simplemente retorna la cantidad de filas afectadas (int)

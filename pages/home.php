@@ -1,6 +1,7 @@
 <?php
+$ultimos = [];
 
-$ultimos = productos_traer_ultimos($db);
+var_dump(productos_crear($db, 'fsdfds', 2));
 
 ?>
 		<div class="container">

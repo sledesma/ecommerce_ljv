@@ -1,4 +1,6 @@
- 
+<?php
+require 'db/tablas/productos.php';
+?> 
 		<div class="container">
 			<section id="page">
 				<div class="single_top">

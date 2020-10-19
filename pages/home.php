@@ -1,8 +1,6 @@
 <?php
 $ultimos = [];
-
 var_dump(productos_crear($db, 'fsdfds', 2));
-
 ?>
 		<div class="container">
 			<section id="page">

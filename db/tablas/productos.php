@@ -55,6 +55,11 @@ function productos_actualizar($db, $id_v, $descripcion_n, $stock_n) {
 
     $sql = "UPDATE productos SET descripcion = '$descripcion_n' AND stock = '$stock_n' WHERE id = $id_v";
 
+    $consulta = $db->exec($sql); // Consulta devuelve la cantidad de filas afectadas
+
+    if($consulta === false) return false;
+
+    return $consulta;
 
 }
 
@@ -62,6 +67,12 @@ function productos_actualizar($db, $id_v, $descripcion_n, $stock_n) {
 function productos_borrar($db, $id) {
 
     $sql = "DELETE FROM productos WHERE id = $id";
+
+    $consulta = $db->exec($sql); // Consulta devuelve la cantidad de filas afectadas
+
+    if($consulta === false) return false;
+
+    return $consulta;
 
 
 }
@@ -73,5 +84,12 @@ function productos_traer_ultimos($db) {
 
     $sql = 'SELECT * FROM `productos` ORDER BY `fecha_alta` DESC LIMIT 3';
 
+    $consulta = $db->query($sql);
+
+    if(!$consulta) return false;
+
+    $datos = $consulta->fetchAll(PDO::FETCH_ASSOC);
+
+    return $datos;
 
 }

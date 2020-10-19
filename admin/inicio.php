@@ -12,6 +12,11 @@
 </head>
 <body>
     <h2>Bienvenido administrador</h2>
+    <form action="subidaMasa.php" method="post" enctype="multipart/form-data">
+        Puede subir varios registros mediante un archivo CSV (Descripcion/Stock): 
+        <input type="file" name="archivo">
+        <button>Subir</button>
+    </form>
     <table class="tabla">
         <thead>
             <tr>

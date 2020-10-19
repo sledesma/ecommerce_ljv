@@ -17,3 +17,8 @@ if(isset($_GET['accion'])) {
 } else {
     require_once 'inicio.php';
 }
+/*
+1) ATR III
+2) Repaso II
+3) Tengo hambre, quiero irme
+*/

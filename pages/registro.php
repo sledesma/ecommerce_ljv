@@ -4,7 +4,7 @@
 					<div class="register">
 		<div class="register-top-grid">
 			<h3>NUEVO USUARIO</h3>
-			<form action="#" method="post">
+			<form action="scripts/auth/register.php" method="post">
 				<div class="mation">
 					<span>Nombre: <label>*</label></span>
 					<input type="text" name="nombre"> 

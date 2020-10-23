@@ -10,12 +10,10 @@ require_once DB_PATH.'tablas/usuarios.php';
 $email = $_POST['email'];
 $pass = $_POST['pass'];
 
+$user = usuarios_verificar_si_existe($db, $email, $pass);
 
-if(usuarios_verificar_si_existe($db, $email, $pass)) {
-    $_SESSION['user'] = [
-        'email' => $email,
-        'clave' => $pass
-    ];
+if($user) {
+    $_SESSION['user'] = $user;
     header('Location: ../../admin/index.php');
 } else {
     header('Location: ../../index.php?p=ingreso');

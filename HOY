@@ -22,9 +22,11 @@
 
         -> Back-End
             + tablas/usuarios.php
+            + scripts/login.php (Verificar usuario e iniciar sesión)
+            * admin/index.php (Verificar si hay una sesion iniciada)
 
         -> Front-End
-            
+            * pages/ingreso.php
         
         -> Debe ser posible reestructurar el proyecto para agregar logins
             La carpeta SCRIPTS contendrá todos los archivos necesarios, y el
@@ -33,3 +35,22 @@
 
 
 2. Crear la opcion de PERMANECER LOGUEADO
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------
+
+1) Desarrollar la funcionalidad de los PERMISOS DE USUARIO (HECHO)
+2) Terminar el admin (ver / detalle)
+3) Boton "Recordarme en este dispositivo"
+
+NodeJs y NPM
+PWA
+Next.Js <= React.Js
+Gatsby <= React.Js

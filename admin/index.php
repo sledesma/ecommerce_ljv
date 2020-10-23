@@ -20,7 +20,9 @@ if(
     if(isset($_GET['accion'])) {
         switch($_GET['accion']) {
             case 'borrar':
-                productos_borrar($db, $_GET['id']);
+                if($_SESSION['user']['borrar'] != '0') {
+                    productos_borrar($db, $_GET['id']);
+                }
                 header('Location: index.php');
             break;
 
@@ -29,6 +31,7 @@ if(
             break;
         }
     } else {
+        // header('Location: inicio.php');
         require_once 'inicio.php';
     }
 

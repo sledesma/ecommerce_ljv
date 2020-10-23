@@ -1,10 +1,9 @@
- 
 		<div class="container">
 			<section id="page">
 				<div class="account_grid">
 	<div class="login-right">
 		<h3>INGRESO DE USUARIO</h3>
-		<form action="#" method="post">
+		<form action="scripts/auth/login.php" method="post">
 		<div>
 			<span>E-Mail:</span>
 			<input type="text" name="email"> 

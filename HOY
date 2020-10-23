@@ -1,0 +1,35 @@
+1. Crear el sistema de LOGIN
+    ¿Qué problemas puedo tener para hacer esto?
+        -> Estructura de los archivos        
+            * pages/ingreso.php: <form action="scripts/login.php" method="POST">
+            + scripts/login.php (Agregar el proceso de iniciar sesión)
+                http://localhost/index.php?p=ingreso
+
+        -> Base de Datos
+            + CREATE TABLE Usuarios (
+                id INT NOT NULL AUTO_INCREMENT, 
+                email VARCHAR(50) NOT NULL, 
+                clave VARCHAR(13) NOT NULL, 
+                token TEXT, 
+                ts_alta TIMESTAMP, 
+                ts_ultimologin TIMESTAMP, 
+                crear TINYINT, 
+                leer TINYINT, 
+                actualizar TINYINT, 
+                borrar TINYINT,
+                primary key(id)
+              )
+
+        -> Back-End
+            + tablas/usuarios.php
+
+        -> Front-End
+            
+        
+        -> Debe ser posible reestructurar el proyecto para agregar logins
+            La carpeta SCRIPTS contendrá todos los archivos necesarios, y el
+            resto de las carpetas utilizarán esos archivos.
+        
+
+
+2. Crear la opcion de PERMANECER LOGUEADO

@@ -1,0 +1,33 @@
+Tres formas de crear una página web
+
+1. Forma estática
+2. Forma del lado del cliente
+3. Forma del lado del servidor
+
+
+TRES MANERAS DE PROCESAR (RENDERIZAR) UNA PAGINA WEB
+
+1. Renderizado estático (Static Rendering)
+    El código del lado del cliente se crea ANTES de que se solicite la página.
+    ¿La página que se está solicitando la puedo crear ANTES de que se solicite?
+    ¿Puedo anticiparme a lo que se va a solicitar?
+        Una posible distribución de archivos y carpetas:
+           public/
+           src/
+           generar_static
+    "El cliente solicita archivos HTML previamente generados"
+
+2. Renderizado del lado del cliente (Client-Side Rendering)
+    Solicitar el servidor UNICAMENTE EN CASOS NECESARIOS (no siempre ni en toda petición).
+    Las peticiones se hacen mediante JavaScript
+    "El cliente solicita archivos HTML y, en momentos específicos, hace una petición HTTP 
+    al servidor"
+    
+3. Renderizado del lado del servidor (Server-Side Rendering)
+    Renderizar la página en el servidor. Es el ciclo de vida de una petición más común: 
+    "El cliente solicita una página al servidor, el servidor la procesa 
+    y devuelve la respuesta HTML."
+
+
+
+

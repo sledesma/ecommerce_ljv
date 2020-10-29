@@ -1,0 +1,35 @@
+<?php
+/**
+ * Las funciones que empiezan con ob_ básicamente
+ * permiten pausar el flujo de salida. Entonces, 
+ * en vez de mostrar el resultado del script,
+ * puedo almacenarlo todo en una variable.
+ * ob_start() crea una 'pausa' en el flujo de salida,
+ * ob_get_contents() permite obtener el resultado
+ * actual del flujo de salida; y ob_end_clean()
+ * limpia y vuelve el programa a la normalidad
+ */
+ob_start();
+require_once 'src/pages/index.php';
+$data = ob_get_contents();
+ob_end_clean();
+file_put_contents('public/index.html', $data);
+
+/**
+ * Con esto se logra algo bien interesante,
+ * pero no es todo. En este caso, convertimos
+ * datos dinámicos en estáticos. Pero hay un
+ * tema con LAS RUTAS DINAMICAS. Ahí habrá un
+ * gran trabajo para hacer. Pero es posible.
+ */
+
+ /**
+  * Incluso así se ocultan las URLs y es,
+  * en sí, más seguro. Sin embargo, no siempre
+  * es viable hacer esto. En el caso de un
+  * eCommerce, en donde los artículos varíen muy
+  * poco, es muy recomendable adoptar esta forma de trabajo.
+  * Se puede ejecutar el comando 'php static' desde
+  * la consola al agregar un nuevo producto y regenerar así
+  * los archivos estáticos.
+  */
